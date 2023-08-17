@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Downloads\\Office2PDF\\OfficeToPDF\\OfficeToPDF\\OfficeToPDF.csproj",
+      "projectUniqueName": "E:\\GitHub\\Office2PDF\\OfficeToPDF\\OfficeToPDF\\OfficeToPDF.csproj",
       "projectName": "OfficeToPDF",
-      "projectPath": "E:\\Downloads\\Office2PDF\\OfficeToPDF\\OfficeToPDF\\OfficeToPDF.csproj",
+      "projectPath": "E:\\GitHub\\Office2PDF\\OfficeToPDF\\OfficeToPDF\\OfficeToPDF.csproj",
       "packagesPath": "C:\\Users\\Bhuvan Bharath T\\.nuget\\packages\\",
-      "outputPath": "E:\\Downloads\\Office2PDF\\OfficeToPDF\\OfficeToPDF\\obj\\",
+      "outputPath": "E:\\GitHub\\Office2PDF\\OfficeToPDF\\OfficeToPDF\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

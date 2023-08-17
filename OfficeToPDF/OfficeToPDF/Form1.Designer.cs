@@ -29,119 +29,128 @@ namespace OfficeToPDF
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            location_text_box = new System.Windows.Forms.TextBox();
+            browse_btn = new System.Windows.Forms.Button();
+            word_cb = new System.Windows.Forms.CheckBox();
+            ppt_cb = new System.Windows.Forms.CheckBox();
+            excel_cb = new System.Windows.Forms.CheckBox();
+            label1 = new System.Windows.Forms.Label();
+            convert_btn = new System.Windows.Forms.Button();
+            SuspendLayout();
             // 
-            // textBox1
+            // location_text_box
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 83);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(304, 23);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            location_text_box.Location = new System.Drawing.Point(15, 70);
+            location_text_box.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            location_text_box.Name = "location_text_box";
+            location_text_box.PlaceholderText = "Enter the location";
+            location_text_box.Size = new System.Drawing.Size(347, 27);
+            location_text_box.TabIndex = 0;
+            location_text_box.TextChanged += textBox1_TextChanged;
             // 
-            // button1
+            // browse_btn
             // 
-            this.button1.Location = new System.Drawing.Point(322, 83);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Browse";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            browse_btn.Location = new System.Drawing.Point(369, 70);
+            browse_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            browse_btn.Name = "browse_btn";
+            browse_btn.Size = new System.Drawing.Size(86, 31);
+            browse_btn.TabIndex = 1;
+            browse_btn.Text = "Browse";
+            browse_btn.UseVisualStyleBackColor = true;
+            browse_btn.Click += button1_Click;
             // 
-            // checkBox1
+            // word_cb
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Checked = true;
-            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox1.Location = new System.Drawing.Point(13, 123);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(55, 19);
-            this.checkBox1.TabIndex = 2;
-            this.checkBox1.Text = "Word";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            word_cb.AutoSize = true;
+            word_cb.Checked = true;
+            word_cb.CheckState = System.Windows.Forms.CheckState.Checked;
+            word_cb.Location = new System.Drawing.Point(16, 112);
+            word_cb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            word_cb.Name = "word_cb";
+            word_cb.Size = new System.Drawing.Size(67, 24);
+            word_cb.TabIndex = 2;
+            word_cb.Text = "Word";
+            word_cb.UseVisualStyleBackColor = true;
+            word_cb.CheckedChanged += checkBox1_CheckedChanged;
             // 
-            // checkBox2
+            // ppt_cb
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Checked = true;
-            this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox2.Location = new System.Drawing.Point(13, 148);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(87, 19);
-            this.checkBox2.TabIndex = 3;
-            this.checkBox2.Text = "PowerPoint";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            ppt_cb.AutoSize = true;
+            ppt_cb.Checked = true;
+            ppt_cb.CheckState = System.Windows.Forms.CheckState.Checked;
+            ppt_cb.Location = new System.Drawing.Point(16, 145);
+            ppt_cb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            ppt_cb.Name = "ppt_cb";
+            ppt_cb.Size = new System.Drawing.Size(104, 24);
+            ppt_cb.TabIndex = 3;
+            ppt_cb.Text = "PowerPoint";
+            ppt_cb.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // excel_cb
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Checked = true;
-            this.checkBox3.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox3.Location = new System.Drawing.Point(13, 173);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(53, 19);
-            this.checkBox3.TabIndex = 4;
-            this.checkBox3.Text = "Excel";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            excel_cb.AutoSize = true;
+            excel_cb.Checked = true;
+            excel_cb.CheckState = System.Windows.Forms.CheckState.Checked;
+            excel_cb.Location = new System.Drawing.Point(16, 179);
+            excel_cb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            excel_cb.Name = "excel_cb";
+            excel_cb.Size = new System.Drawing.Size(65, 24);
+            excel_cb.TabIndex = 4;
+            excel_cb.Text = "Excel";
+            excel_cb.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Info;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(13, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(384, 20);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Convert Office documents to PDF files with a single click!";
+            label1.AutoSize = true;
+            label1.BackColor = System.Drawing.Color.Honeydew;
+            label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label1.Location = new System.Drawing.Point(15, 24);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(335, 25);
+            label1.TabIndex = 5;
+            label1.Text = "Convert Office documents to PDF files!";
+            //label1.Click += label1_Click;
             // 
-            // button2
+            // convert_btn
             // 
-            this.button2.Location = new System.Drawing.Point(322, 183);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 28);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Convert";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            convert_btn.BackColor = System.Drawing.Color.PaleTurquoise;
+            convert_btn.Location = new System.Drawing.Point(368, 166);
+            convert_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            convert_btn.Name = "convert_btn";
+            convert_btn.Size = new System.Drawing.Size(86, 37);
+            convert_btn.TabIndex = 6;
+            convert_btn.Text = "Convert";
+            convert_btn.UseVisualStyleBackColor = false;
+            convert_btn.Click += button2_Click;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(443, 223);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(472, 219);
+            Controls.Add(convert_btn);
+            Controls.Add(label1);
+            Controls.Add(excel_cb);
+            Controls.Add(ppt_cb);
+            Controls.Add(word_cb);
+            Controls.Add(browse_btn);
+            Controls.Add(location_text_box);
+            Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            Name = "Form1";
+            Text = "Office to PDF";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.TextBox location_text_box;
+        private System.Windows.Forms.Button browse_btn;
+        private System.Windows.Forms.CheckBox word_cb;
+        private System.Windows.Forms.CheckBox ppt_cb;
+        private System.Windows.Forms.CheckBox excel_cb;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button convert_btn;
     }
 }
 

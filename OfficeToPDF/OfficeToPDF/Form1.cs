@@ -32,7 +32,7 @@ namespace OfficeToPDF
             if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
             {
                 string selectedFolderPath = folderBrowserDialog.SelectedPath;
-                textBox1.Text = selectedFolderPath; // Update the textBox1 with the selected folder path
+                location_text_box.Text = selectedFolderPath; // Update the textBox1 with the selected folder path
             }
         }
 
@@ -43,7 +43,7 @@ namespace OfficeToPDF
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string folderPath = textBox1.Text;
+            string folderPath = location_text_box.Text;
 
             if (Directory.Exists(folderPath))
             {
@@ -81,28 +81,22 @@ namespace OfficeToPDF
 
                     try
                     {
-                        if (fileExtension == ".doc" || fileExtension == ".docx")
+                        if ((fileExtension == ".doc" || fileExtension == ".docx") && word_cb.Checked)
                         {
-                            //MessageBox.Show("doc Entry", "name", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                             application = new Microsoft.Office.Interop.Word.Application();
                             Document document = ((Microsoft.Office.Interop.Word.Application)application).Documents.Open(filePath);
                             document.ExportAsFixedFormat(pdfFilePath, WdExportFormat.wdExportFormatPDF);
                             document.Close();
                         }
-                        else if (fileExtension == ".xls" || fileExtension == ".xlsx")
+                        else if ((fileExtension == ".xls" || fileExtension == ".xlsx") && excel_cb.Checked)
                         {
-                            //MessageBox.Show("excel Entry", "name", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                             application = new Microsoft.Office.Interop.Excel.Application();
                             Workbook workbook = ((Microsoft.Office.Interop.Excel.Application)application).Workbooks.Open(filePath);
                             workbook.ExportAsFixedFormat(XlFixedFormatType.xlTypePDF, pdfFilePath);
                             workbook.Close();
                         }
-                        else if (fileExtension == ".ppt" || fileExtension == ".pptx")
+                        else if ((fileExtension == ".ppt" || fileExtension == ".pptx") && ppt_cb.Checked)
                         {
-                            MessageBox.Show("ppt Entry", "name", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                             application = new Microsoft.Office.Interop.PowerPoint.Application();
                             Presentation presentation = ((Microsoft.Office.Interop.PowerPoint.Application)application).Presentations.Open(filePath);
                             presentation.ExportAsFixedFormat(pdfFilePath, PpFixedFormatType.ppFixedFormatTypePDF);
