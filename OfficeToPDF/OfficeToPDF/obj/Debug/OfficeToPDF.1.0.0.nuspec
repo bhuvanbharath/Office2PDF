@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>OfficeToPDF</id>
+    <version>1.0.0</version>
+    <authors>OfficeToPDF</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net5.0-windows7.0">
+        <dependency id="Microsoft.Office.Interop.Excel" version="15.0.4795.1001" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Office.Interop.PowerPoint" version="15.0.4420.1018" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Office.Interop.Word" version="15.0.4797.1004" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net5.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="D:\OneDrive - TATA MOTORS LTD\1. Tools\Office2PDF\OfficeToPDF\OfficeToPDF\bin\Debug\net5.0-windows\OfficeToPDF.runtimeconfig.json" target="lib\net5.0-windows7.0\OfficeToPDF.runtimeconfig.json" />
+    <file src="D:\OneDrive - TATA MOTORS LTD\1. Tools\Office2PDF\OfficeToPDF\OfficeToPDF\bin\Debug\net5.0-windows\OfficeToPDF.dll" target="lib\net5.0-windows7.0\OfficeToPDF.dll" />
+  </files>
+</package>
