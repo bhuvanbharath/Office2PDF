@@ -43,7 +43,6 @@ E:\Downloads\Office2PDF\OfficeToPDF\OfficeToPDF\obj\Debug\net5.0-windows\refint\
 E:\Downloads\Office2PDF\OfficeToPDF\OfficeToPDF\obj\Debug\net5.0-windows\OfficeToPDF.pdb
 E:\Downloads\Office2PDF\OfficeToPDF\OfficeToPDF\obj\Debug\net5.0-windows\OfficeToPDF.genruntimeconfig.cache
 E:\Downloads\Office2PDF\OfficeToPDF\OfficeToPDF\obj\Debug\net5.0-windows\ref\OfficeToPDF.dll
-E:\GitHub\Office2PDF\OfficeToPDF\OfficeToPDF\obj\Debug\net5.0-windows\OfficeToPDF.csproj.AssemblyReference.cache
 E:\GitHub\Office2PDF\OfficeToPDF\OfficeToPDF\obj\Debug\net5.0-windows\Interop.Microsoft.Office.Interop.Excel.dll
 E:\GitHub\Office2PDF\OfficeToPDF\OfficeToPDF\obj\Debug\net5.0-windows\Interop.Microsoft.Office.Interop.Word.dll
 E:\GitHub\Office2PDF\OfficeToPDF\OfficeToPDF\obj\Debug\net5.0-windows\Interop.Microsoft.Office.Interop.PowerPoint.dll
